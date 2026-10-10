@@ -2,6 +2,9 @@ mod collector;
 mod skel {
     include!(concat!(env!("OUT_DIR"), "/syslantern.skel.rs"));
 }
+mod event;
+mod raw;
+mod output;
 
 use std::sync::atomic::{AtomicBool, Ordering};
 use std::sync::Arc;
